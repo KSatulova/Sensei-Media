@@ -1,217 +1,283 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <meta name="CameraMath" content="Solving Any Math" />
-    <meta name="robots" content="index,folow" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Sensei Media</title>
-  </head>
-  <body>
-    <!--Header Section-->
-    <div class="hero">
-      <nav class="header-nav">
-        <div class="logo">
-          <img class="logo-jpg" src="/images/logo.jpg" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css" />
+  <meta name="CameraMath" content="Solving Any Math" />
+  <meta name="robots" content="index,folow" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <title>Sensei Media</title>
+  <!--Swiper CSS-->
+  <link rel="stylesheet" href="/swiper-bundle.min.css">
+</head>
+
+<body>
+  <!--Header Section-->
+  <div class="hero">
+    <nav class="header-nav">
+      <div class="logo">
+        <img class="logo-jpg" src="/images/logo.jpg" alt="" />
+      </div>
+      <ul class="header-list">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Наши работы</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a href="#" class="header-btn">Заказать звонок</a>
+    </nav>
+  </div>
+  <div class="main-content">
+    <!--MAin Section-->
+    <section class="content">
+      <div class="content__inner">
+        <div class="content__column">
+          <h2 class="content__title">Студия дизайна</h2>
+          <h1 class="content__subtitle">полного цикла</h1>
+          <p class="content__text">От дизайна визиток до дизайна сайтов</p>
+          <div class="content__btns">
+            <a href="#" class="content__btn content__btn-1">Комплексные решения</a>
+            <a href="#" class="content__btn content__btn-2">Логотипы</a>
+            <a href="#" class="content__btn content__btn-3">Дизайн</a>
+          </div>
         </div>
-        <ul class="header-list">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Наши работы</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a href="#" class="header-btn">Заказать звонок</a>
-      </nav>
+        <div class="content__column content__column-img">
+          <img src="/images/content-svg.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!------Design Section------>
+    <div class="design">
+      <div class="design-text">
+        <h2>Мы знаем толк в дизайне!</h2>
+      </div>
+      <div class="design-boxes">
+        <div class="box">
+          <h3>6 лет</h3>
+          <p>В сфере рекламы</p>
+        </div>
+        <div class="box">
+          <h3><span>более</span>100</h3>
+          <p>Наших постоянных клиентов</p>
+        </div>
+        <div class="box">
+          <h3>+20%</h3>
+          <p>Конверсия продаж</p>
+        </div>
+        <div class="box">
+          <h3>-70%</h3>
+          <p>Ошибок менеджеров</p>
+        </div>
+      </div>
     </div>
-    <div class="main-content">
-      <!--MAin Section-->
-      <section class="content">
-        <div class="container">
-          <div class="content__inner">
-            <div class="content__column">
-              <h2 class="content__title">Студия дизайна</h2>
-              <h1 class="content__subtitle">полного цикла</h1>
-              <p class="content__text">От дизайна визиток до дизайна сайтов</p>
-              <div class="content__btns">
-                <a href="#" class="content__btn content__btn-1"
-                  >Комплексные решения</a
-                >
-                <a href="#" class="content__btn content__btn-2">Логотипы</a>
-                <a href="#" class="content__btn content__btn-3">Дизайн</a>
+    <!--Form Section-->
+    <section class="pricing">
+      <div class="pricing-header">
+        <h2 class="pricing-title">Наши услуги</h2>
+      </div>
+      <div class="pricing-plan-container">
+        <!--Card-1-->
+        <div class="pricing-plan-box">
+          <div class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__header">
+              <div class="pricing-plan__title">
+                <h5>Рекламные материалы</h5>
               </div>
             </div>
-            <div class="content__column content__column-img">
-              <img src="/images/content-svg.svg" alt="" />
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__features">Верстка макетов</li>
+                <li class="pricing-plan__features">Флаеры</li>
+                <li class="pricing-plan__features">Визитки</li>
+                <li class="pricing-plan__features">Брошюры</li>
+                <li class="pricing-plan__features">Листовки</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__text">от<span> 2000 руб.</span></p>
             </div>
           </div>
+          <div class="pricing-btns">
+            <a href="#" class="pricing-btn">Подробнее</a>
+          </div>
         </div>
-      </section>
-      <!------Design Section------>
-      <div class="design">
-        <div class="design-text">
-          <h2>Мы знаем толк в дизайне!</h2>
+        <!--Card-2-->
+        <div class="pricing-plan-box">
+          <div class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__header">
+              <div class="pricing-plan__title">
+                <h5>
+                  бренд <br />
+                  дизайн
+                </h5>
+              </div>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__features">Логотипы</li>
+                <li class="pricing-plan__features">Фирменный стиль</li>
+                <li class="pricing-plan__features">Айдентика</li>
+                <li class="pricing-plan__features">Концепция бренда</li>
+                <li class="pricing-plan__features">Гайдлайн</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__text">от<span> 3000 руб.</span></p>
+            </div>
+          </div>
+          <div class="pricing-btns">
+            <a href="#" class="pricing-btn">Подробнее</a>
+          </div>
         </div>
-        <div class="design-boxes">
-          <div class="box">
-            <h3>6 лет</h3>
-            <p>В сфере рекламы</p>
+        <!--Card-3-->
+        <div class="pricing-plan-box">
+          <div class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__header">
+              <div class="pricing-plan__title">
+                <h5>дизайн вывесок и рекламы</h5>
+              </div>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__features">Дизайн вывесок</li>
+                <li class="pricing-plan__features">Фотопривязки</li>
+                <li class="pricing-plan__features">Роллапы</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__text">от<span> 3000 руб.</span></p>
+            </div>
           </div>
-          <div class="box">
-            <h3><span>более</span>100</h3>
-            <p>Наших постоянных клиентов</p>
+          <div class="pricing-btns">
+            <a href="#" class="pricing-btn">Подробнее</a>
           </div>
-          <div class="box">
-            <h3>+20%</h3>
-            <p>Конверсия продаж</p>
+        </div>
+        <!--Card-4-->
+        <div class="pricing-plan-box">
+          <div class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__header">
+              <div class="pricing-plan__title">
+                <h5>
+                  Digital <br />
+                  Дизайн
+                </h5>
+              </div>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__features">WEB дизайн</li>
+                <li class="pricing-plan__features">Креативы для рекламы</li>
+                <li class="pricing-plan__features">Презентации</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__text">от<span> 5000 руб.</span></p>
+            </div>
           </div>
-          <div class="box">
-            <h3>-70%</h3>
-            <p>Ошибок менеджеров</p>
+          <div class="pricing-btns">
+            <a href="#" class="pricing-btn">Подробнее</a>
+          </div>
+        </div>
+        <!--Card-5-->
+        <div class="pricing-plan-box">
+          <div class="pricing-plan pricing-plan--highlighted">
+            <div class="pricing-plan__header">
+              <div class="pricing-plan__title">
+                <h5>Smm</h5>
+              </div>
+            </div>
+            <div class="pricing-plan__description">
+              <ul class="pricing-plan__list">
+                <li class="pricing-plan__features">Stories Instagram</li>
+                <li class="pricing-plan__features">Post instagram</li>
+                <li class="pricing-plan__features">Рекламные креативы</li>
+                <li class="pricing-plan__features">Оформление группы</li>
+              </ul>
+            </div>
+            <div class="pricing-plan__actions">
+              <p class="pricing-plan__text">от<span> 15000 руб.</span></p>
+            </div>
+          </div>
+          <div class="pricing-btns">
+            <a href="#" class="pricing-btn">Подробнее</a>
           </div>
         </div>
       </div>
-      <!--Service Section-->
-      <section class="pricing">
-        <div class="pricing-header">
-          <h2 class="pricing-title">Наши услуги</h2>
+    </section>
+    <section class="wrapper">
+      <div class="contact__container">
+        <div class="form__container">
+          <h2 class="form__container-title">заказать Консультацию <br>специалиста</h2>
+          <p class="form__container-text">Заполните форму и мы свяжемся с вами в ближайшее время!</p>
+          <form action="" class="contact-form">
+            <input class="form__control" type="text" placeholder="Ваше имя" required>
+            <input class="form__control" type="tel" placeholder="Номер вашего телефона" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
+          </form>
+          <div class="form__check">
+            <input class="form__input-check" id="" type="checkbox" name="" value="check" required>
+            <label class="form__input-check-text" for="checkbox"> Я согласен с условиями обработки персональных данных
+            </label><br>
+          </div>
+          <button class="send-button">Отправить</button>
         </div>
-        <div class="pricing-plan-container">
-          <!--Card-1-->
-          <div class="pricing-plan-box">
-            <div class="pricing-plan pricing-plan--highlighted">
-              <div class="pricing-plan__header">
-                <div class="pricing-plan__title">
-                  <h5>Рекламные материалы</h5>
+        <div class="image__form">
+          <img class="image__form-svg" src="/images/contact-svg.svg" alt="image">
+        </div>
+      </div>
+    </section>
+    <!--Slider Section-->
+    <section class="slider">
+      <div class="slider-container swiper">
+        <div class="slider-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="card-header">
+                <img src="/images/slider-logo-1.svg" alt="">
+                <p class="card-header-text">Самая крупная в Финляндии компания по обработке камня
+                  и крупнейший в мире производитель теплоаккумулирующих печей
+                  каминов текст пример</p>
+              </div>
+              <div class="card-main">
+                <div class="card-boxes">
+                  <h2>Результат:</h2>
+                  <div class="card-box">
+                    <h3>+ 85,71%</h3>
+                    <p>увеличение количества <br>обращений с рекламы</p>
+                  </div>
+                  <div class="card-box">
+                    <h3>+ 83,51%</h3>
+                    <p> увеличение конверсии</p>
+                  </div>
+                  <div class="card-box">
+                    <h3>- 50,51%</h3>
+                    <p>снижение стоимости<br>за обращение</p>
+                  </div>
                 </div>
               </div>
-              <div class="pricing-plan__description">
-                <ul class="pricing-plan__list">
-                  <li class="pricing-plan__features">Верстка макетов</li>
-                  <li class="pricing-plan__features">Флаеры</li>
-                  <li class="pricing-plan__features">Визитки</li>
-                  <li class="pricing-plan__features">Брошюры</li>
-                  <li class="pricing-plan__features">Листовки</li>
-                </ul>
+              <div class="card-footer">
+                <h2>Системы:</h2>
+                <img src="/images/logo-google.jpg" alt="">
+                <img src="/images/logo-yandex.jpg" alt="">
               </div>
-              <div class="pricing-plan__actions">
-                <p class="pricing-plan__text">от<span> 2000 руб.</span></p>
-              </div>
-            </div>
-            <div class="pricing-btns">
-              <a href="#" class="pricing-btn">Подробнее</a>
-            </div>
-          </div>
-          <!--Card-2-->
-          <div class="pricing-plan-box">
-            <div class="pricing-plan pricing-plan--highlighted">
-              <div class="pricing-plan__header">
-                <div class="pricing-plan__title">
-                  <h5>
-                    бренд <br />
-                    дизайн
-                  </h5>
-                </div>
-              </div>
-              <div class="pricing-plan__description">
-                <ul class="pricing-plan__list">
-                  <li class="pricing-plan__features">Логотипы</li>
-                  <li class="pricing-plan__features">Фирменный стиль</li>
-                  <li class="pricing-plan__features">Айдентика</li>
-                  <li class="pricing-plan__features">Концепция бренда</li>
-                  <li class="pricing-plan__features">Гайдлайн</li>
-                </ul>
-              </div>
-              <div class="pricing-plan__actions">
-                <p class="pricing-plan__text">от<span> 3000 руб.</span></p>
-              </div>
-            </div>
-            <div class="pricing-btns">
-              <a href="#" class="pricing-btn">Подробнее</a>
-            </div>
-          </div>
-          <!--Card-3-->
-          <div class="pricing-plan-box">
-            <div class="pricing-plan pricing-plan--highlighted">
-              <div class="pricing-plan__header">
-                <div class="pricing-plan__title">
-                  <h5>дизайн вывесок и рекламы</h5>
-                </div>
-              </div>
-              <div class="pricing-plan__description">
-                <ul class="pricing-plan__list">
-                  <li class="pricing-plan__features">Дизайн вывесок</li>
-                  <li class="pricing-plan__features">Фотопривязки</li>
-                  <li class="pricing-plan__features">Роллапы</li>
-                </ul>
-              </div>
-              <div class="pricing-plan__actions">
-                <p class="pricing-plan__text">от<span> 3000 руб.</span></p>
-              </div>
-            </div>
-            <div class="pricing-btns">
-              <a href="#" class="pricing-btn">Подробнее</a>
-            </div>
-          </div>
-          <!--Card-4-->
-          <div class="pricing-plan-box">
-            <div class="pricing-plan pricing-plan--highlighted">
-              <div class="pricing-plan__header">
-                <div class="pricing-plan__title">
-                  <h5>
-                    Digital <br />
-                    Дизайн
-                  </h5>
-                </div>
-              </div>
-              <div class="pricing-plan__description">
-                <ul class="pricing-plan__list">
-                  <li class="pricing-plan__features">WEB дизайн</li>
-                  <li class="pricing-plan__features">Креативы для рекламы</li>
-                  <li class="pricing-plan__features">Презентации</li>
-                </ul>
-              </div>
-              <div class="pricing-plan__actions">
-                <p class="pricing-plan__text">от<span> 5000 руб.</span></p>
-              </div>
-            </div>
-            <div class="pricing-btns">
-              <a href="#" class="pricing-btn">Подробнее</a>
-            </div>
-          </div>
-          <!--Card-5-->
-          <div class="pricing-plan-box">
-            <div class="pricing-plan pricing-plan--highlighted">
-              <div class="pricing-plan__header">
-                <div class="pricing-plan__title">
-                  <h5>Smm</h5>
-                </div>
-              </div>
-              <div class="pricing-plan__description">
-                <ul class="pricing-plan__list">
-                  <li class="pricing-plan__features">Stories Instagram</li>
-                  <li class="pricing-plan__features">Post instagram</li>
-                  <li class="pricing-plan__features">Рекламные креативы</li>
-                  <li class="pricing-plan__features">Оформление группы</li>
-                </ul>
-              </div>
-              <div class="pricing-plan__actions">
-                <p class="pricing-plan__text">от<span> 15000 руб.</span></p>
-              </div>
-            </div>
-            <div class="pricing-btns">
-              <a href="#" class="pricing-btn">Подробнее</a>
             </div>
           </div>
         </div>
-      </section>
-    </div>
-    <div class="slider-content"></div>
-    <div class="footer"></div>
-  </body>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </div>
+  <div class="footer"></div>
+</body>
+<!--Swiper JS-->
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/script.js"></script>
+
 </html>
