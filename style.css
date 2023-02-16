@@ -9,7 +9,7 @@
 }
 
 .main-content {
-  max-width: 85%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -23,10 +23,12 @@ body {
 :root {
   --bg-color: #d0f0ff;
   --btn-color: #77b2d3;
+  --body-color: #f7f6ff;
   --text-color: #333333;
   --text-color-2: #ffffff;
   --hovbg-navbar-color: #ffffff;
   --hover-color: #f32c6d;
+  --gray-bar-color: gray;
 }
 
 a {
@@ -47,7 +49,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 8%;
-  background-color: var(--hovbg-navbar-color);
+  background: var(--hovbg-navbar-color);
 }
 
 .logo-jpg {
@@ -61,7 +63,7 @@ ul {
 
 .header-list li a {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -77,6 +79,7 @@ ul {
   border: 1px solid transparent;
   border-radius: 0.5rem;
   font-weight: 600;
+  font-size: 2rem;
   color: #ffffff;
   padding: 1rem 3.5rem;
   transition: transform 0.4s;
@@ -110,7 +113,7 @@ body {
 /*--------------------------------------------Content Section-------------------------------------------------*/
 
 .content {
-  padding: 8.2rem 11.3rem 10rem;
+  padding: 9rem 0;
   padding-bottom: 9rem;
   background: #f7f6ff;
 }
@@ -157,7 +160,7 @@ body {
 
 .content__btn {
   display: inline-block;
-  background-color: #77b2d3;
+  background: var(--btn-color);
   color: #ffffff;
   border-radius: 2.5rem;
   font-weight: 600;
@@ -175,62 +178,72 @@ body {
 }
 
 .content__btn:hover {
-  background-color: #f32c6d;
+  background: var(--hover-color);
   transition: 0.4s;
 }
 
 /*--------------------------------------------Design Section-------------------------------------------------*/
-.box {
+.design {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  border-right: 1px solid #c7c7c7; /*Remove the last right border*/
-  transition: all 0.4s ease;
-}
-.box:last-child {
-  border-right: none;
-}
-.design {
-  position: relative;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-  border-radius: 1.5rem; /*WTFuck need to put border-radius*/
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  padding: 5rem;
+  background: var(--text-color-2);
+  margin: 5rem 0;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.design:before,
-.design:after {
+.design-boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  padding: 1rem 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-right: 2rem;
+  cursor: pointer;
+  flex: 1 1 25%;
+}
+
+.box::after {
   content: "";
   position: absolute;
-  z-index: -1;
-  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.8);
-  top: 50%;
-  bottom: 0;
-  left: 1rem;
+  height: 70%;
+  width: 1px;
+  background: var(--gray-bar-color);
+  top: 0;
+  right: 25%;
 }
 
-.design-text {
-  text-align: start;
-  padding: 4rem 5.5rem;
-  font-weight: 700;
-  font-size: 3.8rem;
-  background-color: #ffffff;
-  text-transform: uppercase;
-}
-.design-boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
-  gap: 1.5rem;
-  align-items: center;
-  cursor: pointer;
-  text-align: center;
-  background-color: #ffffff;
-  padding-bottom: 4.7rem;
+.box:last-child:after {
+  display: none;
 }
 
 .box:hover {
   transform: translateY(-1.5rem);
+}
+
+.design-text {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 3.8rem;
+  background: var(--text-color-2);
+  text-transform: uppercase;
 }
 
 .box h3 {
@@ -245,7 +258,7 @@ body {
 
 .box span {
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .box p {
@@ -253,15 +266,20 @@ body {
   font-size: 1.6rem;
   padding-bottom: 5.6rem;
 }
+
 /*--------------------------------------------Services Section-------------------------------------------------*/
 .pricing {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 3rem;
+  margin: 5rem 0;
 }
 
 .pricing-header {
-  padding-top: 9rem;
-  padding-bottom: 4.1rem;
+  margin: 8rem 0;
 }
 
 .pricing-title {
@@ -276,36 +294,45 @@ body {
   align-items: flex-start;
   flex-direction: row;
   justify-content: space-between;
+  gap: 3rem;
+  flex: 1 1 0%;
+}
+
+.pricing-plan-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 20%;
   gap: 1rem;
 }
 
 .pricing-plan {
   display: flex;
   flex-direction: column;
-  width: 33rem;
+  justify-content: space-between;
   border-radius: 2.5rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   font-size: 1.8rem;
   font-weight: 800;
-  color: #333333;
-  background-color: #ffffff;
+  color: var(--text-color);
+  background: var(--text-color-2);
   text-transform: uppercase;
   min-height: 53rem;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .pricing-plan--highlighted {
   box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
-  transform: scale(1.05);
 }
 
 .pricing-plan__header {
   display: flex;
   justify-content: center;
   padding: 2.5rem;
-  background: #77b2d3;
-  color: #ffffff;
+  background: var(--btn-color);
+  color: var(--text-color-2);
   min-height: 12rem;
   align-items: center;
 }
@@ -315,7 +342,7 @@ body {
 }
 
 .pricing-plan__title {
-  color: #f7f6ffS;
+  color: var(--text-color-2);
   font-weight: 700;
   font-size: 3rem;
   line-height: 3.4rem;
@@ -323,6 +350,7 @@ body {
 }
 
 .pricing-plan__description {
+  /*plan-list is not alined at the same height*/
   padding: 2.5rem;
 }
 
@@ -345,15 +373,14 @@ body {
   margin-bottom: 0.5em;
 }
 .pricing-plan__features::before {
-  content: "\2714";
-  color: #f32c6d;
+  content: url(/images/Vectoricon.svg);
   position: absolute;
   left: 0;
 }
 
 .pricing-plan__actions {
   padding: 2.5rem;
-  border-top: 0.1rem solid #eeeeee;
+  border-top: 0.1rem solid var(--text-color-2);
   display: flex;
   flex-direction: column;
 }
@@ -382,9 +409,226 @@ body {
   font-size: 2rem;
 }
 
-.pricing-plan-box {
+.pricing-btns {
+  margin: 2.1rem;
+}
+
+.pricing-btn {
+  background: linear-gradient(115.11deg, #f32c6d 10.12%, #cb1d95 100.01%);
+  border-radius: 9px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--text-color-2);
+  padding: 1.5rem 6.5rem;
+}
+
+.pricing-btn:hover {
+  background: var(--btn-color);
+}
+
+/*--------------------------------------------Forma Section-------------------------------------------------*/
+
+.wrapper {
+  width: 100%;
+  margin: 9rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background: #f32c6d;
+}
+
+.contact__container {
+  max-width: 177rem;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  background: #77b2d3;
+  overflow: hidden;
+}
+
+.form__container {
+  background: yellow;
+}
+.form__container-title {
+  font-weight: 700;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  margin-bottom: 2.2rem;
+}
+
+.form__container-text {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 2.2rem;
+}
+
+.contact-form {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.form__control {
+  padding: 1.9rem 1.5rem;
+}
+.contact-form input {
+  width: 50%;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  border-radius: 0.7rem;
+}
+
+.contact-form textarea {
+  width: 90%;
+  resize: none;
+  height: 15rem;
+  margin-bottom: 2rem;
+  padding: 1.9rem 1.6rem;
+  border: none;
+  outline: none;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  border-radius: 0.4rem;
+}
+
+.form__check {
+  font-weight: 300;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+[type="checkbox"] {
+  display: inline-block;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.send-button {
+  border: none;
+  outline: none;
+  padding: 1.4rem 5.5rem;
+  background: linear-gradient(115.11deg, #f32c6d 10.12%, #cb1d95 100.01%);
+  border-radius: 0.9rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--text-color-2);
+  cursor: pointer;
+}
+.send-button:hover {
+  background: var(--btn-color);
+}
+
+.image__form {
+  height: auto;
+  background: #f32c6d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+  object-fit: fill;
+}
+.image__form img {
+  min-width: 100%;
+  max-height: 100%;
+  align-self: center;
+}
+
+/*--------------------------------------------Slider Section-------------------------------------------------*/
+.slider {
+  width: 100%;
+  margin: 9rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f32c6d;
+}
+.slider-container {
+  max-width: 177rem;
+  margin: auto;
+  width: 100%;
+  background: #e9c6de;
+}
+
+.slider-content {
+}
+
+.card {
+  height: 49.2rem;
+  background: var(--text-color-2);
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  height: 22.7rem;
+  padding-left: 2.8rem;
+  padding-right: 3.4rem;
+}
+.card-header img {
+  padding-top: 2.5rem;
+  padding-left: 5.2rem;
+}
+
+.card-header p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.card-main {
+  width: 100%;
+  height: 16.2rem;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  background: #f3f1fe;
+}
+
+.card-boxes {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-boxes h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.card-box h3 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+.card-box p {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.card-footer {
+  height: 13rem;
+  padding-left: 2.8rem;
+  padding-right: 3.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-footer h2 {
+  font-weight: 800;
+  font-size: 1.8rem;
 }
